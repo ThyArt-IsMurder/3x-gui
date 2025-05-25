@@ -330,7 +330,7 @@ func (a *InboundController) delDepletedClients(c *gin.Context) {
 	}
 	err = a.inboundService.DelDepletedClients(id)
 	if err != nil {
-		jsonMsg(c, I18nWeb(c, "somethingWentWrong"), err)
+		jsonMsg(c, I18nWeb(c, "somethingisWrong"), err)
 		return
 	}
 	jsonMsg(c, I18nWeb(c, "pages.inbounds.toasts.delDepletedClientsSuccess"), nil)

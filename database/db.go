@@ -178,7 +178,7 @@ func IsSQLiteDB(file io.ReaderAt) (bool, error) {
 }
 
 func Checkpoint() error {
-	// Update WAL
+	// Update wal
 	err := db.Exec("PRAGMA wal_checkpoint;").Error
 	if err != nil {
 		return err

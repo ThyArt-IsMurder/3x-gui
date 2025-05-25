@@ -1,3 +1,4 @@
+# x-gui
 module x-ui
 
 go 1.24.3
